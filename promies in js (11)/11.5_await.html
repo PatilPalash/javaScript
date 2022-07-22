@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Example Async</title>
+</head>
+<body>
+
+  <p id="result"></p>
+
+  <script type="text/javascript">
+    
+    async function myDisplay(){
+
+      let promise = new Promise( function(resolve,reject){
+        setTimeout( function(){ resolve("Learnvern is Awesome") } ,3000);
+      });
+
+      document.getElementById("result").innerHTML = await promise;
+
+    }
+
+    myDisplay();
+
+  </script>
+</body>
+</html>
