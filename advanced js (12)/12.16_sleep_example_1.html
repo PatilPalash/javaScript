@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example sleep()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function sleep(milliseconds){
+			return new Promise(resolve => setTimeout(resolve,milliseconds));
+		}
+
+		async function example(){
+			for(let i=0;i<10;i++){
+				await sleep(2000);
+				document.writeln(i+ ". Welcome to LearnVern.com <br>" );
+			}
+		}
+
+		example();
+	</script>
+</body>
+</html>

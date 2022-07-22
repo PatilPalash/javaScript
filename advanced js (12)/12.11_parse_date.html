@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Date.parse() method</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var d1 =  new Date("2020-01-01");
+		var d2 = "June 19, 2020"; // This will show a valid output
+		var d3 = "June 40, 2020"; // This will show an invalid output NaN
+
+		var result = Date.parse(d1);
+		var result2 = Date.parse(d2);
+		var result3 = Date.parse(d3);
+
+		// document.writeln("Result after parsing in millisecods is: " + result);
+		// document.writeln("Result after parsing in millisecods is: " + result2);
+		document.writeln("Result after parsing in millisecods is: " + result3);
+
+	</script>
+</body>
+</html>

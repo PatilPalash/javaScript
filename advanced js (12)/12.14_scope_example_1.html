@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example Scope of a variable</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = 200;
+		
+		function example(){
+			var a = 300;
+
+			document.writeln("value of a inside the function: "+a+ "<br>");
+		}
+		example();
+		document.writeln("value of a outside the function: "+a+"<br>");
+	</script>
+</body>
+</html>
